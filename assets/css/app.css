@@ -1,0 +1,33 @@
+body {
+	background-color: #F7EB9C;
+}
+
+header {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5%;
+	width: 100%;
+	background-color: #C92E2E;
+	float: left;
+}
+
+footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 5%;
+	width: 100%;
+	background-color: #C92E2E;
+	float: left;
+}
+
+.content {
+	display: block;
+	position: absolute;
+	top: 5%;
+	float: left;
+	width: 100%;
+}
