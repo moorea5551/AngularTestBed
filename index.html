@@ -8,24 +8,49 @@
 		<title>AngularJS Sandbox</title>
 	</head>
 
-	<body>
+	<body ng-controller="TabController as tab">
 		<script type="text/javascript" src="assets/js/angular.min.js"></script>
 		<script type="text/javascript" src="app/app.module.js"></script>
 		<script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		
 		<header>
-			Here be headers {{ "and angular" }}
+            <section>
+                <ul class="nav nav-pills">
+                    <li ng-class="{ active:tab.isSet(1) }">
+                        <a ng-click="tab.setTab(1)" href>Home</a>
+                    </li>
+                    <li ng-class="{ active:tab.isSet(2) }">
+                        <a ng-click="tab.setTab(2)" href>Closet Inventory</a>
+                    </li>
+                    <li ng-class="{ active:tab.isSet(3) }">
+                        <a ng-click="tab.setTab(3)" href>About</a>
+                    </li>
+                </ul>
+            </section>
 		</header>
 
 		<footer>
 			Here's some footer {{ "In nomine Patris, et Filii, et Spiritus Sancti" }}
 		</footer>
 
-		<div class="content" ng-controller="ClosetController as closet">
-            <article ng-repeat="item in closet.closetData">
-                {{ item.type }}
-                <div class="colorBlock" style="background-color: {{ item.color }};"></div>
-            </article>
+		<div class="content">
+            <div class="panel" ng-show="tab.isSet(1)">
+                home test
+            </div>
+
+            <div class="panel" ng-show="tab.isSet(2)">
+                <section ng-controller="ClosetController as closet">
+                    <article ng-repeat="item in closet.closetData">
+                        {{ item.type }}
+                        <div class="colorBlock" style="background-color: {{ item.color }};"></div>
+                    </article>
+                </section>
+            </div>
+
+            <div class="panel" ng-show="tab.isSet(3)">
+                about test
+            </div>
 		</div>
 	</body>
 </html>

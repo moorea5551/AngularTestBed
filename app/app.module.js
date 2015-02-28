@@ -9,3 +9,15 @@ app.controller('ClosetController', ['$http', function($http) {
         closet.closetData = data;
     });
 }]);
+
+app.controller('TabController', ['$log', function($log) {
+    this.tabTest = 1;
+
+    this.setTab = function(tab) {
+        this.tabTest = tab;
+    };
+
+    this.isSet = function(tab) {
+        return this.tabTest === tab;
+    };
+}]);
