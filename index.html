@@ -21,8 +21,11 @@
 			Here's some footer {{ "In nomine Patris, et Filii, et Spiritus Sancti" }}
 		</footer>
 
-		<div class="content">
-			lorem ipsum {{ "dolor sit amet" }}
+		<div class="content" ng-controller="ClosetController as closet">
+            <article ng-repeat="item in closet.closetData">
+                {{ item.type }}
+                <div class="colorBlock" style="background-color: {{ item.color }};"></div>
+            </article>
 		</div>
 	</body>
 </html>

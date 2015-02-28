@@ -1,0 +1,117 @@
+[
+    {
+        "id" : 0,
+        "type" : "shirt",
+        "season" : [
+            "fall",
+            "winter",
+            "spring"
+        ],
+        "color" : "#FF0000"
+    },
+    {
+        "id" : 1,
+        "type" : "pants",
+        "season" : [
+            "fall",
+            "winter",
+            "spring",
+            "summer"
+        ],
+        "color" : "#DDAAAA"
+    },
+    {
+        "id" : 2,
+        "type" : "hat",
+        "season" : [
+            "fall",
+            "winter"
+        ],
+        "color" : "#0000FF"
+    },
+    {
+        "id" : 3,
+        "type" : "shoes",
+        "season" : [
+            "fall",
+            "winter",
+            "spring",
+            "summer"
+        ],
+        "color" : "#CCCCCC"
+    },
+    {
+        "id" : 4,
+        "type" : "shirt",
+        "season" : [
+            "summer"
+        ],
+        "color" : "#00FF00"
+    },
+    {
+        "id" : 5,
+        "type" : "pants",
+        "season" : [
+            "fall",
+            "winter",
+            "spring",
+            "summer"
+        ],
+        "color" : "#ABC0CC"
+    },
+    {
+        "id" : 6,
+        "type" : "hat",
+        "season" : [
+            "fall",
+            "winter"
+        ],
+        "color" : "#FF0000"
+    },
+    {
+        "id" : 7,
+        "type" : "shirt",
+        "season" : [
+            "fall",
+            "winter"
+        ],
+        "color" : "#01234BA"
+    },
+    {
+        "id" : 8,
+        "type" : "shirt",
+        "season" : [
+            "fall",
+            "winter",
+            "spring"
+        ],
+        "color" : "#FF0000"
+    },
+    {
+        "id" : 9,
+        "type" : "pants",
+        "season" : [
+            "summer"
+        ],
+        "color" : "#00FF0F"
+    },
+    {
+        "id" : 10,
+        "type" : "pants",
+        "season" : [
+            "spring"
+        ],
+        "color" : "#FF0000"
+    },
+    {
+        "id" : 11,
+        "type" : "accessory",
+        "season" : [
+            "fall",
+            "winter",
+            "spring",
+            "summer"
+        ],
+        "color" : "#FF0000"
+    }
+]

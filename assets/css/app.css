@@ -25,9 +25,16 @@ footer {
 }
 
 .content {
+    padding: 15px;
 	display: block;
 	position: absolute;
 	top: 5%;
 	float: left;
 	width: 100%;
+}
+
+.colorBlock {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
 }
